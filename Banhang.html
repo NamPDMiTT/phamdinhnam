@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán Hàng</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="layout">
+        <header>
+            <img src="img/PSG.jpg" alt="">
+        </header>
+        <div class="menu">
+            <nav>
+                <ul class="list-menu">
+                    <li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                    <li><a href="DKTV.html">ĐĂNG KÝ THÀNH VIÊN</a></li>
+                    <li><a href="BANHANG.html">BÁN HÀNG</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="banhang">
+            <div class="text">
+                <h1 class="bh">BÁN HÀNG</h1>
+            </div>
+
+            <div class="mucgia">
+                <select name="select" class="filter" onchange="choosePrice(this)">
+                    <option value="0">Chọn mức giá</option>
+					<option value="1">Dưới 100</option>
+					<option value="2">Từ 100 đến 250</option>
+					<option value="3">Từ 250 đến 500</option>
+                    <option value="4">Trên 500</option>
+                </select>
+            </div>
+
+            <div class="container" style="width: 620px !important;">
+                <table class="table-bordered" border="1">
+                    <thead>
+                        <tr>
+                            <td><input type="checkbox" id="checkAll"></td>
+                            <th class="check-box">Hàng hóa</th>
+                            <th class="check-box">Đơn giá</th>
+                            <th class="check-box">Số lượng</th>
+                            <th class="check-box">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>iPhone 9</td>
+                            <td name="price">700</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>Samsung</td>
+                            <td name="price">400</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>Nokia</td>
+                            <td name="price">100</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>Sony Xperia</td>
+                            <td name="price">450</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>Motorola</td>
+                            <td name="price">180</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>Oppo</td>
+                            <td name="price">600</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td>bPhone</td>
+                            <td name="price">90</td>
+                            <td><input type="number" name="amount" value="0" min="0" step="1" disabled onkeyup="bill(this)" onchange="bill(this)"></td>
+                            <td name="bill" class="output"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th style="height: 25px" colspan="4">TỔNG</th>
+                            <th style="height: 25px; color: red; font-weight: bold" id="sumMoney"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <h2 id="name">PHẠM ĐÌNH NAM_PH26842</h2>
+        </footer>
+    </div>
+
+    <script src="js/Banhang.js"></script>
+</body>
+
+</html>

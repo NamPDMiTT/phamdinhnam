@@ -1,0 +1,320 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#layout {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+
+/*----- Header -----*/
+
+header {
+    width: 1200px;
+    height: 400px;
+}
+
+header img {
+    width: 1200px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*----- Menu -----*/
+
+nav {
+    line-height: 40px;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+.menu {
+    background-color: #0d324d;
+    width: 1200px;
+    height: 40px;
+}
+
+.list-menu {
+    display: flex;
+    max-width: auto;
+    height: 40px;
+    margin: 0;
+    justify-content: center;
+}
+
+.list-menu li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+.list-menu li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.list-menu li:hover {
+    background-color: #6af187;
+}
+
+.list-menu li a:hover {
+    color: black;
+    line-height: 40px;
+}
+
+
+/*----- Trang chủ -----*/
+
+#bsta h1 {
+    text-align: center;
+    color: black;
+}
+
+.slider {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider #prev,
+.slider #next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 35px;
+    border: none;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    color: white;
+    top: 50%;
+}
+
+.slider #prev:hover,
+.slider #next:hover {
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    transition: 0.88s;
+    transform: scale(0.88);
+}
+
+.slider #next {
+    left: 92.9%;
+}
+
+p {
+    background-color: #0d324d;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+#title {
+    text-shadow: black 1px 1px;
+    font-weight: 600;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    top: 91%;
+    left: 45%;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+
+/*----- Đăng ký thành viên -----*/
+
+#dangky {
+    width: 800px;
+    margin-left: 30%;
+}
+
+.khung {
+    max-width: 70%;
+}
+
+#form {
+    max-width: 70%;
+}
+
+legend {
+    margin: 12px 0 10px 0;
+}
+
+.dk {
+    width: 500px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.gioitinh {
+    width: 500px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 1px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.gd {
+    margin: 7px 0 auto 10px;
+}
+
+.sothich {
+    width: 500px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 1px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.hb {
+    margin: 7px 0 auto 10px;
+}
+
+.quoctich {
+    width: 515px;
+    height: 36px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 1px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.quoctich option {
+    margin: 7px 0 auto 10px;
+}
+
+.note {
+    max-width: 492px;
+    min-width: 492px;
+    max-height: 200px;
+    min-height: 200px;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: block;
+}
+
+.button {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100px;
+    transition: 0.7s;
+}
+
+.button:hover {
+    transform: scale(0.9);
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    color: black;
+}
+
+
+/*----- Bán hàng -----*/
+
+#banhang {
+    max-width: 1000px;
+    margin-left: 25%;
+}
+
+#banhang .text h1 {
+    margin-left: 215px;
+}
+
+.mucgia {
+    margin-left: 225px;
+}
+
+.filter {
+    width: 150px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 1px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.container {
+    background-color: white;
+    border: 2px solid;
+    border-radius: 2px;
+    box-shadow: 0 0 5px gray;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#checkAll {
+    margin: 0 15px 0 15px;
+}
+
+.check-box {
+    padding: 5px 21px 5px 21px;
+}
+
+.check {
+    margin: 0 15px 0 15px;
+}
+
+.output {
+    width: 172px;
+    background-color: white;
+}
+
+
+/*----- Footer -----*/
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+#name {
+    color: white;
+}

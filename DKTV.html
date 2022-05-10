@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        #title-mssv {
+            color: red;
+        }
+        
+        #title-name {
+            color: red;
+        }
+        
+        #title-email {
+            color: red;
+        }
+        
+        #title-gender {
+            color: red;
+        }
+        
+        #title-hobby {
+            color: red;
+        }
+        
+        #title-nationality {
+            color: red;
+        }
+        
+        #title-note {
+            color: red;
+        }
+        
+        legend,
+        button {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <header>
+            <img src="img/PSG.jpg" alt="">
+        </header>
+        <div class="menu">
+            <nav>
+                <ul class="list-menu">
+                    <li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                    <li><a href="DKTV.html">ĐĂNG KÝ THÀNH VIÊN</a></li>
+                    <li><a href="BANHANG.html">BÁN HÀNG</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="dangky">
+            <div class="khung">
+                <div class="text">
+                    <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+                </div>
+
+                <div id="noidung">
+                    <form id="form" method="post" onsubmit="return validate()">
+                        <div class="form-group">
+                            <legend>Mã sinh viên</legend>
+                            <input type="text" class="dk" id="mssv" placeholder="VD: PH26842">
+                            <span id="title-mssv"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Họ và tên</legend>
+                            <input type="text" class="dk" id="fullname" placeholder="VD: Phạm Đình Nam">
+                            <span id="title-name"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Email</legend>
+                            <input type="email" class="dk" id="email" placeholder="VD: nampham24112003@gmail.com">
+                            <span id="title-email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Giới tính</legend>
+                            <div class="gioitinh" id="gt">
+                                <input type="radio" name="gender" class="gd"> Nam
+                                <input type="radio" name="gender" class="gd"> Nữ
+                            </div>
+                            <span id="title-gender"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend style="margin-top: 17px">Sở thích</legend>
+                            <div class="sothich" id="st">
+                                <input type="checkbox" name="checkbox" class="hb">
+                                <label>Đọc sách</label>
+                                <input type="checkbox" name="checkbox" class="hb">
+                                <label>Du lịch</label>
+                                <input type="checkbox" name="checkbox" class="hb">
+                                <label>Âm nhạc</label>
+                                <input type="checkbox" name="checkbox" class="hb">
+                                <label>Ẩm thực</label>
+                                <input type="checkbox" name="checkbox" class="hb">
+                                <label>Khác</label>
+                            </div>
+                            <span id="title-hobby"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend style="margin-top: 17px">Quốc tịch</legend>
+                            <select name="national" class="quoctich" id="national">
+                                <option value="0">Chọn quốc tịch</option>
+                                <option value="1">Việt Nam</option>
+                                <option value="2">Trung Quốc</option>
+                                <option value="3">Nhật Bản</option>
+                                <option value="4">Hàn Quốc</option>
+                                <option value="5">Mỹ</option>
+                                <option value="6">Anh</option>
+                            </select>
+                            <span id="title-nationality"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Ghi chú</legend>
+                            <textarea type="textarea" name="note" class="note" id="note" placeholder="Tối đa 200 ký tự"></textarea>
+                            <span id="title-note"></span>
+                        </div>
+
+                        <div class="nut">
+                            <br><button class="button">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2 id="name">PHẠM ĐÌNH NAM_PH26842</h2>
+        </footer>
+    </div>
+
+    <script src="js/DKTV.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="layout">
+        <header>
+            <img src="img/PSG.jpg" alt="">
+        </header>
+        <div class="menu">
+            <nav>
+                <ul class="list-menu">
+                    <li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                    <li><a href="DKTV.html">ĐĂNG KÝ THÀNH VIÊN</a></li>
+                    <li><a href="BANHANG.html">BÁN HÀNG</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bsta">
+            <div class="text">
+                <h1>BỘ SƯU TẬP ẢNH</h1>
+            </div>
+        </div>
+        <div class="slider">
+            <button onclick="previous()" id="prev"><</button>
+            <button onclick="next()" id="next">></button>
+            <div class="slide-show">
+                <img id="slide" src="img/anh1.jpeg" width="700px" height="500px">
+            </div>
+            <p id="title">Ảnh
+                <span id="number">1</span> /
+                <span id="demo">7</span>
+            </p>
+        </div>
+        <footer>
+            <h2 id="name">PHẠM ĐÌNH NAM_PH26842</h2>
+        </footer>
+    </div>
+
+    <script src="js/Trangchu.js"></script>
+</body>
+
+</html>
